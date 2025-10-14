@@ -22,11 +22,11 @@
 
 | 阶段 | 目标 | 状态 |
 |------|------|------|
-| 第1周 | 安装 PostgreSQL，熟悉数据库连接 | 🟢 进行中 |
-| 第2周 | 使用 Python 调用汇率 API，保存为 CSV | ⏳ 计划中 |
-| 第3周 | 将数据写入 PostgreSQL，自动建表 | ⏳ 计划中 |
-| 第4周 | 配置定时任务（cron / Airflow）实现每日更新 | ⏳ 计划中 |
-| 第5周 | 生成汇率趋势表，导出供 BI 使用 | ⏳ 计划中 |
+| 第1步 | 安装 PostgreSQL，熟悉数据库连接 | ✅ 已完成|
+| 第2步 | 使用 Python 调用汇率 API，保存为 CSV | ✅ 已完成 |
+| 第3步 | 将数据写入 PostgreSQL，自动建表 | 🟢 进行中 |
+| 第4步 | 配置定时任务（cron / Airflow）实现每日更新 | 🟢 进行中 |
+| 第5步 | 生成汇率趋势表，导出供 BI 使用 | ⏳ 计划中 |
 
 ---
 
@@ -34,7 +34,7 @@
 
 - **Language**: Python 3.12.7
 - **Database**: PostgreSQL
-- **Scheduler**: Apache Airflow
+- **Scheduler**: cron
 - **OS**: macOS (Apple M4)
 - **Version Control**: Git + GitHub
 
@@ -57,14 +57,20 @@ exchange-rate-db/
 
 
 🧠 后续计划
+ 
  添加日志系统
+ 
  支持多货币对（USD/CNY, EUR/USD, JPY/USD）
+ 
  增加 API 重试机制与异常处理
+ 
  可视化输出：生成每日汇率折线图
+
  使用 Docker 进行部署（高级阶段）
 
 
  ✨ 作者
+
 Vive
 Data Analyst → Data Engineer in progress
 📍 Shanghai / Remote
